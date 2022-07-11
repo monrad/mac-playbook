@@ -66,6 +66,7 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - bat
   - coreutils
   - fd
   - fzf
@@ -78,6 +79,7 @@ homebrew_installed_packages:
   - irrtoolset
   - jq
   - mtr
+  - neovim
   - pinentry-mac
   - pwgen
   - pyenv
