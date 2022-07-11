@@ -28,6 +28,9 @@ The playbook contained in this repo does nothing except delegate all functionali
     # Run the playbook.
     make provision
 
+    # Addtional tasks
+    Open up the `Mac Playbook - Bootstrap` note and follow it.
+
 ### Running a specific set of tagged tasks
 
 You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are `dotfiles`, `homebrew`, `mas` and `osx`.
@@ -38,7 +41,6 @@ You can filter which part of the provisioning process to run by specifying a set
 
 ### Things that still need to be done manually
 
-1. Turn on FileVault under _Security & Privacy_ preferences.
 1. Setup Divvy shortcuts and license.
 1. Allow `Divy` Accessibility control under _Security & Privacy_ preferences.
 
