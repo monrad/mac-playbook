@@ -1,0 +1,43 @@
+---
+- name: Install Python interpreters # noqa 305
+  ansible.builtin.shell: >-
+    pyenv install {{ item }}
+  args:
+    creates: "~/.pyenv/versions/{{ item }}/bin/python"
+  with_items: "{{ pyenv_python_versions }}"
+  tags: ["pyenv"]
+
+- name: Get current global version # noqa 305
+  ansible.builtin.shell: >-
+    pyenv global
+  register: pyenv_global_version
+  changed_when: false
+  tags: ["pyenv"]
+
+- name: Set pyenv_global_active fact
+  ansible.builtin.set_fact:
+    pyenv_global_active: "{{ pyenv_global_version.stdout_lines |
+      join(' ') | trim() }}"
+  tags: ["pyenv"]
+
+- name: Check if 'system' version is available # noqa 305
+  ansible.builtin.shell: >-
+    pyenv versions
+  register: pyenv_versions
+  changed_when: false
+  failed_when: false
+  when: "'system' in pyenv_global"
+  tags: ["pyenv"]
+
+- name: Remove 'system' from pyenv_global
+  ansible.builtin.set_fact:
+    pyenv_global: "{{ pyenv_global | replace('system', '') | trim() }}"
+  when: "'system' in pyenv_global and 'system' not in pyenv_versions.stdout"
+  tags: ["pyenv"]
+
+- name: Set pyenv global version to '{{ pyenv_global }}'
+  ansible.builtin.shell: >-
+    pyenv global {{ pyenv_global }} &&
+    pyenv rehash
+  when: "pyenv_global is defined and pyenv_global_active != pyenv_global"
+  tags: ["pyenv"]
