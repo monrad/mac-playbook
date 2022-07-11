@@ -11,6 +11,13 @@ The playbook contained in this repo does nothing except delegate all functionali
 
 ## Installation
 
+    # Pre tasks
+    Log into Mac App Store (App Store in Spotlight)
+
+    # Create git repo dir
+    mkdir -p ~/git/bootstrap
+    cd ~/git/bootstrap
+
     # Clone this repository to your local drive.
     git clone --recursive https://github.com/monrad/mac-playbook.git
     cd mac-playbook
