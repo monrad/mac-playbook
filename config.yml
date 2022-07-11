@@ -1,0 +1,159 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+configure_terminal: false
+configure_osx: false
+configure_zsh: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove:
+  - "App Store"
+  - Calendar
+  - Contacts
+  - FaceTime
+  - Keynote
+  - Launchpad
+  - Mail
+  - Maps
+  - Music
+  - Notes
+  - Numbers
+  - Pages
+  - Photos
+  - Podcasts
+  - TV
+dockitems_persist:
+  - name: "Safari"
+    path: "/Applications/Safari.app/"
+    pos: 1
+  - name: "Messages"
+    path: "/System/Applications/Messages.app/"
+    pos: 2
+  - name: "Reminders"
+    path: "/System/Applications/Reminders.app/"
+    pos: 3
+  - name: "iTerm"
+    path: "/Applications/iTerm.app/"
+    pos: 4
+  - name: "Tweetbot"
+    path: "/Applications/Tweetbot.app/"
+    pos: 5
+  - name: "Slack"
+    path: "/Applications/Slack.app/"
+    pos: 6
+  - name: "System Preferences"
+    path: "/System/Applications/System%20Preferences.app/"
+    pos: 7
+
+configure_sudoers: false
+sudoers_custom_config: ""
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/monrad/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/git/bootstrap/dotfiles
+dotfiles_repo_version: main
+dotfiles_files:
+  - .zshrc
+  # - .gitignore
+  # - .inputrc
+  # - .osx
+  # - .vimrc
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - coreutils
+  - fd
+  - fzf
+  - gh
+  - git
+  - git-lfs
+  - gnupg
+  - go
+  - httpie
+  - irrtoolset
+  - jq
+  - mtr
+  - pinentry-mac
+  - pwgen
+  - pyenv
+  - ripgrep
+  - sipcalc
+  - telnet
+  - tmate
+  - tmux
+  - wget
+  - whois
+  - xping
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-drivers
+  - martintopholm/xping
+
+homebrew_cask_accept_external_apps: true
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - docker
+  - drawio
+  - firefox
+  - google-chrome
+  - google-earth-pro
+  - iterm2
+  - logitech-camera-settings
+  - serial
+  - signal
+  - slack
+  - sublime-text
+  - telegram
+  - visual-studio-code
+  - whatsapp
+  - wireshark
+  - zoom
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+#mas_installed_apps: []
+mas_installed_apps:
+  - { id: 1384080005, name: "Tweetbot 3 for Twitter" }
+  - { id: 413857545, name: "Divvy - Window Manager" }
+mas_uninstalled_apps:
+  - { id: 408981434, name: "iMovie" }
+  - { id: 682658836, name: "GarageBand" }
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+# pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+pip_packages:
+  - name: git-cu
+    state: latest
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: "{{ playbook_dir }}/../tasks/*.yml"
