@@ -56,13 +56,16 @@ sudoers_custom_config: ""
 dotfiles_repo: https://github.com/monrad/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/git/bootstrap/dotfiles
-dotfiles_repo_version: main
+dotfiles_repo_version: neovim
 dotfiles_files:
   - .zshrc
-  # - .gitignore
-  # - .inputrc
+  - .config/nvim/init.lua
+  - .config/nvim/lua/user/colorscheme.lua
+  - .config/nvim/lua/user/keymaps.lua
+  - .config/nvim/lua/user/options.lua
+  - .config/nvim/lua/user/plugins.lua
+  - .config/nvim/lua/user/whichkey.lua
   # - .osx
-  # - .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.

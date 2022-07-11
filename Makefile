@@ -2,7 +2,7 @@ TAGS ?= all
 
 all: provision
 
-install: install-xcode install-ansible install-repo
+install: install-xcode install-ansible install-repo install-nvim-dirs
 
 install-ansible: /usr/local/bin/pip /usr/local/bin/ansible-playbook
 
@@ -11,6 +11,9 @@ install-xcode:
 	if [ "`xcode-select -p`" != "/Library/Developer/CommandLineTools" ]; then sudo xcode-select -switch /Library/Developer/CommandLineTools; fi
 
 install-repo: ./roles ./geerlingguy.mac-dev-playbook/main.yml
+
+install-nvim-dirs:
+	mkdir -p ~/.config/nvim/lua/user/
 
 provision:
 	ansible-playbook main.yml -i geerlingguy.mac-dev-playbook/inventory -K --tags="$(TAGS)"
