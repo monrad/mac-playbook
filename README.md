@@ -25,7 +25,7 @@ The playbook contained in this repo does nothing except delegate all functionali
 
 You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are `dotfiles`, `homebrew`, `mas` and `osx`.
 
-    ansible-playook main.yml -i geerlingguy.mac-dev-playbook/inventory -K --tags "dotfiles,homebrew"
+    ansible-playbook main.yml -i geerlingguy.mac-dev-playbook/inventory -K --tags "dotfiles,homebrew"
 
 ## Future additions
 
