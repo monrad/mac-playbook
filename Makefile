@@ -4,7 +4,7 @@ all: provision
 
 install: install-xcode install-ansible install-repo install-nvim-dirs
 
-install-ansible: /usr/local/bin/pip /usr/local/bin/ansible-playbook
+install-ansible: /usr/bin/pip3 /usr/local/bin/ansible-playbook
 
 install-xcode:
 	xcode-select -p 2>&1 >/dev/null || xcode-select --install
@@ -21,16 +21,16 @@ provision:
 clean:
 	rm -rf ./roles
 
-.PHONY: all install install-ansible install-xcode install-repo provision clean
+.PHONY: all install install-ansible install-xcode install-repo install-nvim-dirs provision clean
 
 ./geerlingguy.mac-dev-playbook/main.yml:
 	git submodule update --init --recursive
 
-/usr/local/bin/pip:
-	sudo easy_install pip
+/usr/bin/pip3:
+	python3 -m pip install --upgrade pip
 
-/usr/local/bin/ansible-playbook: /usr/local/bin/pip
-	sudo pip install ansible
+/usr/local/bin/ansible-playbook: /usr/bin/pip3
+	pip3 install ansible
 
 ./roles:
 	ansible-galaxy install -r requirements.yml
