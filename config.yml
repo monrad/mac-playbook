@@ -98,9 +98,10 @@ homebrew_installed_packages:
   - zsh-syntax-highlighting
 
 homebrew_taps:
-  - homebrew/core
   - homebrew/cask
   - homebrew/cask-drivers
+  - homebrew/cask-fonts
+  - homebrew/core
   - martintopholm/xping
 
 homebrew_cask_accept_external_apps: true
@@ -109,6 +110,7 @@ homebrew_cask_apps:
   - docker
   - drawio
   - firefox
+  - font-hack-nerd-font
   - google-chrome
   - google-earth-pro
   - iterm2

@@ -1,0 +1,22 @@
+---
+- name: Enable iTerm2 automatic updates.
+  community.general.osx_defaults:
+    domain: com.googlecode.iterm2
+    key: SUEnableAutomaticChecks
+    type: bool
+    value: true
+  tags: ['iterm2']
+
+- name: Ensure iTerm directories are initialized if they are not already.
+  ansible.builtin.command: "open -a /Applications/iTerm.app"
+  args:
+    creates: "~/Library/Application Support/iTerm2/DynamicProfiles/"
+  tags: ["iterm2"]
+
+- name: Ensure local DynamicProfiles are copied to iTerm2 directory.
+  ansible.builtin.copy:
+    src: "iterm2.json"
+    dest: "~/Library/Application Support/iTerm2/DynamicProfiles/iterm2.json"
+  become: false
+  tags: ["iterm2"]
+
