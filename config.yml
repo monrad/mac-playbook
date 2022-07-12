@@ -3,7 +3,7 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
 configure_terminal: false
-configure_osx: false
+configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -65,7 +65,7 @@ dotfiles_files:
   - .config/nvim/lua/user/options.lua
   - .config/nvim/lua/user/plugins.lua
   - .config/nvim/lua/user/whichkey.lua
-  # - .osx
+  - .osx
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
