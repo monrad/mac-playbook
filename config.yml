@@ -1,9 +1,7 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: true
 configure_terminal: false
-configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -53,6 +51,8 @@ sudoers_custom_config: ""
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
+# Set to 'true' to install dotfiles
+configure_dotfiles: true
 dotfiles_repo: https://github.com/monrad/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/git/bootstrap/dotfiles
@@ -134,6 +134,8 @@ mas_uninstalled_apps:
 mas_email: ""
 mas_password: ""
 
+# Set to 'true' to configure osx defaults
+configure_osx: true
 osx_script: "~/.osx --no-restart"
 
 # Install packages from other package managers.
