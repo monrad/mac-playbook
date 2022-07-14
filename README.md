@@ -28,7 +28,7 @@ The playbook contained in this repo does nothing except delegate all functionali
     # Install dependencies.
     make install
 
-    # Run the playbook.
+    # Run the playbook (Some casks might need an interactive password during installation).
     make provision
 
     # Addtional tasks
