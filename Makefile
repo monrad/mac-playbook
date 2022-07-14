@@ -4,7 +4,7 @@ all: provision
 
 install: install-xcode install-ansible install-repo install-dirs install-icloud-symlink
 
-install-ansible: /usr/bin/pip3 /usr/local/bin/ansible-playbook
+install-ansible: upgrade-pip run-ansible
 
 install-xcode:
 	xcode-select -p 2>&1 >/dev/null || xcode-select --install
@@ -31,10 +31,11 @@ clean:
 ./geerlingguy.mac-dev-playbook/main.yml:
 	git submodule update --init --recursive
 
-/usr/bin/pip3:
-	python3 -m pip install --upgrade pip
+upgrade-pip:
+       python3 -m pip install --upgrade pip
+       python3 -m ensurepip --upgrade
 
-/usr/local/bin/ansible-playbook: /usr/bin/pip3
+run-ansible: upgrade-pip
 	pip3 install ansible
 
 ./roles:
