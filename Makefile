@@ -32,8 +32,8 @@ clean:
 	git submodule update --init --recursive
 
 upgrade-pip:
-       python3 -m pip install --upgrade pip
-       python3 -m ensurepip --upgrade
+	python3 -m pip install --upgrade pip
+	python3 -m ensurepip --upgrade
 
 run-ansible: upgrade-pip
 	pip3 install ansible
