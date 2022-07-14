@@ -2,7 +2,7 @@ TAGS ?= all
 
 all: provision
 
-install: install-xcode install-ansible install-repo install-nvim-dirs
+install: install-xcode install-ansible install-repo install-dirs install-icloud-symlink
 
 install-ansible: /usr/bin/pip3 /usr/local/bin/ansible-playbook
 
@@ -12,8 +12,13 @@ install-xcode:
 
 install-repo: ./roles ./geerlingguy.mac-dev-playbook/main.yml
 
-install-nvim-dirs:
-	mkdir -p ~/.config/nvim/lua/user/
+install-dirs:
+	mkdir -p ~/.config/nvim/
+	mkdir -p ~/.ssh/
+	mkdir ~/.gnupg
+
+install-icloud-symlink:
+	ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ ~/iCloudDrive
 
 provision:
 	ansible-playbook main.yml -i geerlingguy.mac-dev-playbook/inventory -K --tags="$(TAGS)"
@@ -21,7 +26,7 @@ provision:
 clean:
 	rm -rf ./roles
 
-.PHONY: all install install-ansible install-xcode install-repo install-nvim-dirs provision clean
+.PHONY: all install install-ansible install-xcode install-repo install-nvim-dirs install-icloud-symlink provision clean
 
 ./geerlingguy.mac-dev-playbook/main.yml:
 	git submodule update --init --recursive
