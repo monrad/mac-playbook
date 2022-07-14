@@ -21,6 +21,9 @@ The playbook contained in this repo does nothing except delegate all functionali
     # Clone this repository to your local drive.
     git clone --recursive https://github.com/monrad/mac-playbook.git
     cd mac-playbook
+    
+    # export path so ansible binaries are going to be on path
+    export PATH=~/Library/Python/3.8/bin:$PATH 
 
     # Install dependencies.
     make install
@@ -41,6 +44,5 @@ You can filter which part of the provisioning process to run by specifying a set
 
 ### Things that still need to be done manually
 
-1. Setup Divvy shortcuts and license.
-1. Allow `Divy` Accessibility control under _Security & Privacy_ preferences.
+Follow the note `Mac Playbook - Bootstrap`
 
