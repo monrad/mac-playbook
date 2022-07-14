@@ -14,8 +14,6 @@ install-repo: ./roles ./geerlingguy.mac-dev-playbook/main.yml
 
 install-dirs:
 	mkdir -p ~/.config/nvim/
-	mkdir -p ~/.ssh/
-	mkdir ~/.gnupg
 
 install-icloud-symlink:
 	ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ ~/iCloudDrive
