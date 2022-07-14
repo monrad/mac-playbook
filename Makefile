@@ -2,7 +2,7 @@ TAGS ?= all
 
 all: provision
 
-install: install-xcode install-ansible install-repo install-dirs install-icloud-symlink
+install: install-xcode install-ansible install-repo install-dirs
 
 install-ansible: upgrade-pip run-ansible
 
@@ -14,9 +14,6 @@ install-repo: ./roles ./geerlingguy.mac-dev-playbook/main.yml
 
 install-dirs:
 	mkdir -p ~/.config/nvim/
-
-install-icloud-symlink:
-	ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ ~/iCloudDrive
 
 provision:
 	ansible-playbook main.yml -i geerlingguy.mac-dev-playbook/inventory -K --tags="$(TAGS)"
