@@ -12,6 +12,12 @@
   args:
     creates: "~/Library/Application Support/iTerm2/DynamicProfiles/"
   tags: ["iterm2"]
+  
+- name: Wait until DynamicProfiles dir is created.
+  ansible.builtin.wait_for:
+    path: "~/Library/Application Support/iTerm2/DynamicProfiles/"
+    state: present
+  tags: ["iterm2"]
 
 - name: Ensure local DynamicProfiles are copied to iTerm2 directory.
   ansible.builtin.copy:
