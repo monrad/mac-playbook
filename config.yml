@@ -61,6 +61,7 @@ dotfiles_files:
   - .config/nvim/init.lua
   - .config/nvim/lua
   - .osx
+  - .p10k.zsh
   - .zshrc
 
 homebrew_installed_packages:

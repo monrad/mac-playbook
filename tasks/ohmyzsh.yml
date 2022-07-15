@@ -3,5 +3,14 @@
   ansible.builtin.git:
     repo: 'https://github.com/ohmyzsh/ohmyzsh.git'
     dest: ~/.oh-my-zsh
+    depth: 1
+    update: no
+  tags: ["zsh"]
+
+- name: Ensure Powerlevel10K repo exists
+  ansible.builtin.git:
+    repo: 'https://github.com/romkatv/powerlevel10k.git'
+    dest: ~/.oh-my-zsh/custom/themes/powerlevel10
+    depth: 1
     update: no
   tags: ["zsh"]
