@@ -30,7 +30,7 @@ upgrade-pip:
 	python3 -m pip install --upgrade pip
 	python3 -m ensurepip --upgrade
 
-pip-install: upgrade-pip
+pip-install-ansible: upgrade-pip
 	pip3 install ansible
 
 ./roles:
