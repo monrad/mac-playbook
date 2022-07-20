@@ -1,0 +1,82 @@
+---
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
+- name: Set General UI/UX settings
+  community.general.osx_defaults: 
+    domain: "{{ item.domain }}" 
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  loop:
+    - { desc: 'Set Appearence to switch between light/dark', domain: ".GlobalPreferences", key: AppleInterfaceStyleSwitchesAutomatically, type: bool, value: true }
+    - { desc: 'Disable smart quotes as they’re annoying when typing code', domain: "NSGlobalDomain", key: NSAutomaticQuoteSubstitutionEnabled, type: bool, value: false}
+    - { desc: 'Disable smart dashes as they’re annoying when typing code', domain: "NSGlobalDomain", key: NSAutomaticDashSubstitutionEnabled, type: bool, value: false}
+    - { desc: 'Disable automatic capitalization', domain: "NSGlobalDomain", key: NSAutomaticCapitalizationEnabled, type: bool, value: false}
+    - { desc: 'Disable spelling corrections', domain: "NSGlobalDomain", key: NSAutomaticSpellingCorrectionEnabled, type: bool, value: false}
+    - { desc: 'Disable automatic period insertion', domain: "NSGlobalDomain", key: NSAutomaticPeriodSubstitutionEnabled, type: bool, value: false}
+  notify:
+    - Restart MenuBar
+    - Restart Dock
+
+###############################################################################
+# Menu bar                                                                    #
+###############################################################################
+- name: Set Menu barsettings
+  community.general.osx_defaults: 
+    domain: "{{ item.domain }}" 
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  loop:
+    - {domain: "com.apple.controlcenter", key: "NSStatusItem Visible Battery", type: bool, value: true }
+    - {domain: "com.apple.controlcenter", key: "NSStatusItem Visible Bluetooth", type: bool, value: true }
+    - {domain: "com.apple.controlcenter", key: "NSStatusItem Visible Clock", type: bool, value: true }
+    - {domain: "com.apple.controlcenter", key: "NSStatusItem Visible Display", type: bool, value: true }
+    - {domain: "com.apple.controlcenter", key: "NSStatusItem Visible Sound", type: bool, value: true }
+    - {domain: "com.apple.controlcenter", key: "NSStatusItem Visible WiFi", type: bool, value: true }
+    - {domain: "com.apple.controlcenter", key: "NSStatusItem Visible NowPlaying", type: bool, value: true }
+  notify:
+    - Restart MenuBar
+
+###############################################################################
+# Finder                                                                      #
+###############################################################################
+- name: Set Finder settings
+  community.general.osx_defaults: 
+    domain: "{{ item.domain }}" 
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  loop:
+    - { desc: 'Finder: show status bar', domain: "com.apple.finder", key: ShowStatusBar, type: bool, value: true}
+    - { desc: 'Use list view in all Finder windows by default', domain: "com.apple.finder", key: FXPreferredViewStyle, type: string, value: "Nlsv"}
+
+###############################################################################
+# Dock                                                                        #
+###############################################################################
+- name: Set Dock settings
+  community.general.osx_defaults: 
+    domain: "{{ item.domain }}" 
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  loop:
+    - { desc: 'Autohide the dock', domain: "com.apple.dock", key: autohide, type: bool, value: true}
+    - { desc: 'Dont show recent apps in dock', domain: "com.apple.dock", key: show-recents, type: bool, value: false}
+  notify:
+    - Restart Dock
+
+###############################################################################
+# Mission Control, Spaces                                                     #
+###############################################################################k
+- name: Set Mission Control/Spaces settings
+  community.general.osx_defaults: 
+    domain: "{{ item.domain }}" 
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  loop:
+    - { desc: 'Dont rearrange spaces', domain: "com.apple.dock", key: mru-spaces, type: bool, value: false}
+  notify:
+    - Restart Dock

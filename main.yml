@@ -7,3 +7,9 @@
       tags: ['always']
 
 - import_playbook: geerlingguy.mac-dev-playbook/main.yml
+
+- hosts: all
+  connection: local
+  roles:
+    - role: osx-defaults
+      tags: ['osx-defaults']
