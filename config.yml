@@ -80,6 +80,7 @@ homebrew_installed_packages:
   - jq
   - mtr
   - neovim
+  - node
   - pinentry-mac
   - pwgen
   - pyenv
