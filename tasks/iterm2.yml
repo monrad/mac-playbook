@@ -21,8 +21,11 @@
 
 - name: Ensure local DynamicProfiles are copied to iTerm2 directory.
   ansible.builtin.copy:
-    src: "iterm2.json"
-    dest: "~/Library/Application Support/iTerm2/DynamicProfiles/iterm2.json"
+    src: "{{ item }}"
+    dest: "~/Library/Application Support/iTerm2/DynamicProfiles/{{ item }}"
+  loop:
+    - "iterm2.json"
+    - "iterm2_tmux.json"
   become: false
   tags: ["iterm2"]
 
