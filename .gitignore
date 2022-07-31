@@ -2,3 +2,4 @@
 *.retry
 roles/*
 !roles/osx-defaults/
+collections*

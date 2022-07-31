@@ -21,6 +21,7 @@ provision:
 clean:
 	rm -rf ./roles/elliotweiser.osx-command-line-tools
 	rm -rf ./roles/geerlingguy.dotfiles
+	rm -rf ./collections
 
 .PHONY: all install install-ansible install-xcode install-repo install-dirs provision clean ./roles ./geerlingguy.mac-dev-playbook/main.yml
 
