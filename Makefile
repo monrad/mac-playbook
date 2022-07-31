@@ -18,10 +18,10 @@ install-dirs:
 provision:
 	ansible-playbook main.yml -i geerlingguy.mac-dev-playbook/inventory -K --tags="$(TAGS)"
 
-clean:
-	rm -rf ./roles
+# clean:
+# 	rm -rf ./roles
 
-.PHONY: all install install-ansible install-xcode install-repo install-dirs provision clean
+.PHONY: all install install-ansible install-xcode install-repo install-dirs provision clean ./roles ./geerlingguy.mac-dev-playbook/main.yml
 
 ./geerlingguy.mac-dev-playbook/main.yml:
 	git submodule update --init --recursive
