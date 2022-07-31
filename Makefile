@@ -18,8 +18,9 @@ install-dirs:
 provision:
 	ansible-playbook main.yml -i geerlingguy.mac-dev-playbook/inventory -K --tags="$(TAGS)"
 
-# clean:
-# 	rm -rf ./roles
+clean:
+	rm -rf ./roles/elliotweiser.osx-command-line-tools
+	rm -rf ./roles/geerlingguy.dotfiles
 
 .PHONY: all install install-ansible install-xcode install-repo install-dirs provision clean ./roles ./geerlingguy.mac-dev-playbook/main.yml
 
