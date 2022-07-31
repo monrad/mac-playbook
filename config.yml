@@ -4,7 +4,7 @@ downloads: ~/.ansible-downloads/
 configure_terminal: false
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
+configure_dock: true
 dockitems_remove:
   - "App Store"
   - Calendar
@@ -62,6 +62,7 @@ dotfiles_files:
   - .config/nvim/lua
   - .osx
   - .p10k.zsh
+  - .tmux.conf
   - .zshrc
 
 homebrew_installed_packages:
