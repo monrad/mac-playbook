@@ -44,7 +44,20 @@
 
 - name: Install Poetry
   ansible.builtin.shell: >-
-    curl -sSL https://install.python-poetry.org | python3
+    curl -sSL https://install.python-poetry.org | python3 - --preview
   args:
     creates: "~/Library/Application Support/pypoetry/"
+  tags: ["python"]
+
+- name: Check Poetry prefer-active-python config
+  ansible.builtin.command: >-
+    poetry config virtualenvs.prefer-active-python
+  register: poetry_prefer_active_python
+  changed_when: false
+  tags: ["python"]
+
+- name: Configure Poetry prefer-active-python
+  ansible.builtin.shell: >-
+    poetry config virtualenvs.prefer-active-python true
+  when: poetry_prefer_active_python.stdout == "false"
   tags: ["python"]
