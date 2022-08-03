@@ -59,5 +59,5 @@
 - name: Configure Poetry prefer-active-python
   ansible.builtin.shell: >-
     poetry config virtualenvs.prefer-active-python true
-  when: poetry_prefer_active_python.stdout == "false"
+  when: poetry_prefer_active_python.stdout != "true"
   tags: ["python"]
