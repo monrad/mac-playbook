@@ -44,7 +44,7 @@
 
 - name: Install Poetry
   ansible.builtin.shell: >-
-    curl -sSL https://install.python-poetry.org | python3 - --preview
+    curl -sSL https://install.python-poetry.org | python - --preview
   args:
     creates: "~/Library/Application Support/pypoetry/"
   tags: ["python"]
