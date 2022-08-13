@@ -14,6 +14,7 @@ install-repo: ./roles ./geerlingguy.mac-dev-playbook/main.yml
 
 install-dirs:
 	mkdir -p ~/.config/nvim/
+	mkdir -p ~/.local/bin/
 
 provision:
 	ansible-playbook main.yml -i geerlingguy.mac-dev-playbook/inventory -K --tags="$(TAGS)"
