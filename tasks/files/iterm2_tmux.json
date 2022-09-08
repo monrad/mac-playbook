@@ -89,7 +89,7 @@
     "Green Component" : 0.93333333730697632
   },
   "Unlimited Scrollback" : true,
-  "Custom Command" : "Custom Shell",
+  "Custom Command" : "No",
   "AWDS Tab Option" : "No",
   "Title Components" : 2,
   "Keyboard Map" : {
@@ -462,7 +462,7 @@
     "Green Component" : 0.81176471710205078
   },
   "Transparency" : 0,
-  "Initial Text" : "",
+  "Initial Text" : "tmux",
   "Background Color" : {
     "Red Component" : 0.10196078568696976,
     "Color Space" : "sRGB",
