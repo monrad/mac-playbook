@@ -49,6 +49,17 @@
     creates: "~/Library/Application Support/pypoetry/"
   tags: ["python"]
 
+- name: Check Poetry virtualenvs.in-project config
+  ansible.builtin.command: poetry config virtualenvs.in-project
+  register: poetry_in_project
+  changed_when: false
+  tags: ["python"]
+
+- name: Configure Poetry virtualenvs.in-project
+  ansible.builtin.command: poetry config virtualenvs.in-project true
+  when: poetry_in_project.stdout != "true"
+  tags: ["python"]
+
 - name: Check Poetry prefer-active-python config
   ansible.builtin.command: >-
     poetry config virtualenvs.prefer-active-python
