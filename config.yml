@@ -172,7 +172,7 @@ post_provision_tasks: "{{ playbook_dir }}/../tasks/*.yml"
 # # Latest Python versions
 pyenv_python38_version: "3.8.13"
 pyenv_python39_version: "3.9.13"
-pyenv_python310_version: "3.10.5"
+pyenv_python310_version: "3.10.6"
 
 # Python versions to install
 pyenv_python_versions:
