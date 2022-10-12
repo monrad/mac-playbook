@@ -114,6 +114,7 @@ homebrew_cask_apps:
   - google-chrome
   - google-earth-pro
   - iterm2
+  - kitty
   - logitech-camera-settings
   - serial
   - signal
