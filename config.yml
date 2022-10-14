@@ -113,6 +113,7 @@ homebrew_cask_apps:
   - drawio
   - firefox
   - font-hack-nerd-font
+  - font-sf-mono
   - google-chrome
   - google-earth-pro
   - iterm2
