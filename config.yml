@@ -40,7 +40,7 @@ dockitems_persist:
   - name: "Slack"
     path: "/Applications/Slack.app/"
     pos: 6
-  - name: "System Preferences"
+  - name: "System Settings"
     path: "/System/Applications/System%20Settings.app/"
     pos: 7
 
