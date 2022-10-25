@@ -41,7 +41,7 @@ dockitems_persist:
     path: "/Applications/Slack.app/"
     pos: 6
   - name: "System Preferences"
-    path: "/System/Applications/System%20Preferences.app/"
+    path: "/System/Applications/System%20Settings.app/"
     pos: 7
 
 configure_sudoers: false
