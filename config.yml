@@ -121,6 +121,7 @@ homebrew_cask_apps:
   - iterm2
   - kitty
   - logitech-camera-settings
+  - rectangle
   - serial
   - signal
   - slack
