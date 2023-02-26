@@ -34,9 +34,6 @@ dockitems_persist:
   - name: "iTerm"
     path: "/Applications/iTerm.app/"
     pos: 4
-  - name: "Tweetbot"
-    path: "/Applications/Tweetbot.app/"
-    pos: 5
   - name: "Slack"
     path: "/Applications/Slack.app/"
     pos: 6
