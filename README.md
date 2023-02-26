@@ -23,7 +23,7 @@ The playbook contained in this repo does nothing except delegate all functionali
     cd mac-playbook
     
     # export path so ansible binaries are going to be on path
-    export PATH=~/Library/Python/3.8/bin:$PATH 
+    export PATH=~/Library/Python/3.9/bin:$PATH 
 
     # Install dependencies.
     make install
