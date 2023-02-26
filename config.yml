@@ -102,10 +102,8 @@ homebrew_installed_packages:
   - zsh-syntax-highlighting
 
 homebrew_taps:
-  - homebrew/cask
   - homebrew/cask-drivers
   - homebrew/cask-fonts
-  - homebrew/core
   - martintopholm/xping
 
 homebrew_cask_accept_external_apps: true
