@@ -186,4 +186,4 @@ pyenv_python_versions:
   - "{{ pyenv_python311_version }}"
 
 # Set global pyenv version
-pyenv_global: "{{ pyenv_python38_version }} system"
+pyenv_global: "system"
