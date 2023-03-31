@@ -10,6 +10,8 @@ dockitems_remove:
   - Calendar
   - Contacts
   - FaceTime
+  - Freeform
+  - iTerm
   - Keynote
   - Launchpad
   - Mail
@@ -31,15 +33,15 @@ dockitems_persist:
   - name: "Reminders"
     path: "/System/Applications/Reminders.app/"
     pos: 3
-  - name: "iTerm"
-    path: "/Applications/iTerm.app/"
+  - name: "kitty"
+    path: "/Applications/kitty.app/"
     pos: 4
   - name: "Slack"
     path: "/Applications/Slack.app/"
-    pos: 6
+    pos: 5
   - name: "System Settings"
     path: "/System/Applications/System%20Settings.app/"
-    pos: 7
+    pos: 6
 
 configure_sudoers: false
 sudoers_custom_config: ""
@@ -101,6 +103,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/cask-drivers
   - homebrew/cask-fonts
+  - homebrew/cask-versions
   - martintopholm/xping
 
 homebrew_cask_accept_external_apps: true
@@ -108,6 +111,10 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - docker
   - drawio
+  - elgato-camera-hub
+  - elgato-control-center
+  - elgato-stream-deck
+  - elgato-wave-link
   - firefox
   - font-hack-nerd-font
   - font-sf-mono
@@ -116,14 +123,15 @@ homebrew_cask_apps:
   - google-earth-pro
   - iterm2
   - kitty
-  - logitech-camera-settings
   - rectangle
   - serial
   - signal
   - slack
   - sublime-text
   - telegram
+  - utm
   - visual-studio-code
+  - visual-studio-code-insiders
   - whatsapp
   - wireshark
   - zoom
