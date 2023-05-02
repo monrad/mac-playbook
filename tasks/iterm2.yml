@@ -8,15 +8,10 @@
   tags: ['iterm2']
 
 - name: Ensure iTerm directories are initialized if they are not already.
-  ansible.builtin.command: "open -a /Applications/iTerm.app"
-  args:
-    creates: "~/Library/Application Support/iTerm2/DynamicProfiles/"
-  tags: ["iterm2"]
-  
-- name: Wait until DynamicProfiles dir is created.
-  ansible.builtin.wait_for:
+  ansible.builtin.file:
     path: "~/Library/Application Support/iTerm2/DynamicProfiles/"
-    state: present
+    state: directory
+    mode: "0755"
   tags: ["iterm2"]
 
 - name: Ensure local DynamicProfiles are copied to iTerm2 directory.
@@ -28,4 +23,3 @@
     - "iterm2_tmux.json"
   become: false
   tags: ["iterm2"]
-

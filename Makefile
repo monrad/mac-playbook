@@ -16,6 +16,7 @@ install-dirs:
 	mkdir -p ~/.config/kitty/
 	mkdir -p ~/.config/nvim/
 	mkdir -p ~/.local/bin/
+	mkdir -p ~/Library/Application\ Support/iTerm2/DynamicProfiles/
 
 provision:
 	ansible-playbook main.yml -i geerlingguy.mac-dev-playbook/inventory -K --tags="$(TAGS)"

@@ -1,11 +1,7 @@
 {
 "Profiles": [
 {
-  "Ansi 2 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0,
-    "Red Component" : 0
-  },
+  "Use Non-ASCII Font" : true,
   "Tags" : [
 
   ],
@@ -14,23 +10,20 @@
     "Blue Component" : 1,
     "Red Component" : 0.3333333432674408
   },
-  "Normal Font" : "Monaco 12",
-  "Ansi 4 Color" : {
-    "Green Component" : 0,
-    "Blue Component" : 0.73333334922790527,
-    "Red Component" : 0
-  },
+  "Has Hotkey" : false,
+  "Normal Font" : "SFMono-Semibold 12",
   "Bold Color" : {
     "Green Component" : 1,
     "Blue Component" : 1,
     "Red Component" : 1
   },
-  "Right Option Key Sends" : 0,
-  "Ansi 6 Color" : {
-    "Green Component" : 0.73333334922790527,
+  "Custom Directory" : "No",
+  "Ansi 4 Color" : {
+    "Green Component" : 0,
     "Blue Component" : 0.73333334922790527,
     "Red Component" : 0
   },
+  "Right Option Key Sends" : 0,
   "Rows" : 25,
   "Default Bookmark" : "No",
   "Non-ASCII Anti Aliased" : true,
@@ -57,6 +50,9 @@
     "Blue Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527
   },
+  "Bound Hosts" : [
+
+  ],
   "Working Directory" : "\/Users\/mmk",
   "Blinking Cursor" : false,
   "Disable Window Resizing" : true,
@@ -65,6 +61,7 @@
   "BM Growl" : true,
   "Command" : "",
   "Description" : "Default",
+  "Dynamic Profile Filename" : "\/Users\/mmk\/Library\/Application Support\/iTerm2\/DynamicProfiles\/iterm2.json",
   "Mouse Reporting" : true,
   "Screen" : -1,
   "Selection Color" : {
@@ -72,6 +69,8 @@
     "Blue Component" : 1,
     "Red Component" : 0.70980000495910645
   },
+  "Initial Use Transparency" : true,
+  "Only The Default BG Color Uses Transparency" : false,
   "Columns" : 80,
   "Idle Code" : 0,
   "Ansi 13 Color" : {
@@ -81,7 +80,7 @@
   },
   "Custom Command" : "No",
   "ASCII Anti Aliased" : true,
-  "Non Ascii Font" : "HackNerdFontComplete-Regular 12",
+  "Non Ascii Font" : "SymbolsNFM 12",
   "Vertical Spacing" : 1,
   "Use Bold Font" : true,
   "Option Key Sends" : 0,
@@ -351,6 +350,7 @@
     }
   },
   "Window Type" : 0,
+  "Blur Radius" : 0.10000000000000001,
   "Background Image Location" : "",
   "Blur" : false,
   "Scrollback Lines" : 0,
@@ -372,31 +372,39 @@
     "Blue Component" : 1,
     "Red Component" : 1
   },
-  "Shortcut" : "A",
+  "Shortcut" : "",
   "Cursor Color" : {
     "Green Component" : 0.73333334922790527,
     "Blue Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527
   },
-  "Transparency" : 0,
+  "Ansi 0 Color" : {
+    "Green Component" : 0,
+    "Blue Component" : 0,
+    "Red Component" : 0
+  },
   "Ansi 1 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0,
     "Red Component" : 0.73333334922790527
   },
-  "Custom Directory" : "No",
+  "Horizontal Spacing" : 1,
+  "Transparency" : 0,
   "Ansi 3 Color" : {
     "Green Component" : 0.73333334922790527,
     "Blue Component" : 0,
     "Red Component" : 0.73333334922790527
   },
-  "Horizontal Spacing" : 1,
   "Ansi 5 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527
   },
-  "Use Non-ASCII Font" : true,
+  "Ansi 6 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Blue Component" : 0.73333334922790527,
+    "Red Component" : 0
+  },
   "Ansi 7 Color" : {
     "Green Component" : 0.73333334922790527,
     "Blue Component" : 0.73333334922790527,
@@ -412,12 +420,12 @@
     "Blue Component" : 0.3333333432674408,
     "Red Component" : 1
   },
-  "Ansi 0 Color" : {
-    "Green Component" : 0,
+  "Guid" : "914BB4BD-E088-4D87-ADB1-44FE993EB070",
+  "Ansi 2 Color" : {
+    "Green Component" : 0.73333334922790527,
     "Blue Component" : 0,
     "Red Component" : 0
-  },
-  "Guid" : "F7471B0B-7C8C-4726-87D7-BF553FBFF527"
+  }
 }
 ]
 }
