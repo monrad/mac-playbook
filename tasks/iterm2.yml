@@ -14,10 +14,11 @@
     mode: "0755"
   tags: ["iterm2"]
 
-- name: Ensure local DynamicProfiles are copied to iTerm2 directory.
-  ansible.builtin.copy:
-    src: "{{ item }}"
+- name: Ensure local DynamicProfiles are symlinked to iTerm2 directory.
+  ansible.builtin.file:
+    src: "{{ inventory_dir }}/tasks/files/{{ item }}"
     dest: "~/Library/Application Support/iTerm2/DynamicProfiles/{{ item }}"
+    state: link
   loop:
     - "iterm2.json"
     - "iterm2_tmux.json"
