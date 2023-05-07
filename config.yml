@@ -63,6 +63,7 @@ dotfiles_files:
   - .config/nvim/init.lua
   - .config/nvim/lua
   - .local/bin/code-sessionizer
+  - .local/bin/elgato
   - .local/bin/it2setcolor
   - .local/bin/tmux-sessionizer
   - .osx
