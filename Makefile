@@ -19,7 +19,7 @@ install-dirs:
 	mkdir -p ~/Library/Application\ Support/iTerm2/DynamicProfiles/
 
 provision:
-	ansible-playbook main.yml -i geerlingguy.mac-dev-playbook/inventory -K --tags="$(TAGS)"
+	ansible-playbook main.yml -i inventory -K --tags="$(TAGS)"
 
 clean:
 	rm -rf ./roles/elliotweiser.osx-command-line-tools
