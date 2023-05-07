@@ -1,0 +1,20 @@
+---
+- name: Ensure Stream Deck directories are initialized if they are not already.
+  ansible.builtin.file:
+    path: "~/Library/Application Support/com.elgato.StreamDeck/ProfilesV2/"
+    state: directory
+    mode: "0755"
+  tags: ["streamdeck"]
+
+- name: Ensure Stream Deck profiles symlinked to profiles directory.
+  ansible.builtin.file:
+    src: "{{ inventory_dir }}/tasks/files/streamdeck_profiles/{{ item }}"
+    dest: "~/Library/Application Support/com.elgato.StreamDeck/ProfilesV2/{{ item }}"
+    state: link
+  loop:
+    - "1FB2E6C8-BB79-452E-ACA3-72FABBAF6D3F.sdProfile" # Stream Deck default profile
+    - "7DFC970D-EF3C-45CD-B632-EE4DB9CFAA01.sdProfile" # Stream Deck Plus default profile
+    - "6A6F60D7-0E9B-4F54-90A7-697835B1F659.sdProfile" # Stream Deck Pedal default profile
+
+  become: false
+  tags: ["streamdeck"]
