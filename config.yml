@@ -103,7 +103,6 @@ homebrew_installed_packages:
   - zsh-syntax-highlighting
 
 homebrew_taps:
-  - homebrew/cask-drivers
   - homebrew/cask-fonts
   - homebrew/cask-versions
   - martintopholm/xping
