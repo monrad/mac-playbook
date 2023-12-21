@@ -58,9 +58,6 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/git/bootstrap/dotfiles
 dotfiles_repo_version: main
 dotfiles_files:
-  - .config/kitty/TokyoNight.conf
-  - .config/kitty/kitty.app.icns
-  - .config/kitty/kitty.conf
   - .config/nvim/init.lua
   - .config/nvim/lua
   - .local/bin/code-sessionizer
@@ -124,7 +121,6 @@ homebrew_cask_apps:
   - google-chrome
   - google-earth-pro
   - iterm2
-  - kitty
   - rectangle
   - serial
   - signal
