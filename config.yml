@@ -99,6 +99,7 @@ homebrew_installed_packages:
   - xping
   - zsh-autosuggestions
   - zsh-syntax-highlighting
+  - zsh-you-should-use
 
 homebrew_taps:
   - homebrew/cask-fonts
