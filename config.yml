@@ -13,6 +13,7 @@ dockitems_remove:
   - Freeform
   - iTerm
   - Keynote
+  - kitty
   - Launchpad
   - Mail
   - Maps
@@ -33,8 +34,8 @@ dockitems_persist:
   - name: "Reminders"
     path: "/System/Applications/Reminders.app/"
     pos: 3
-  - name: "kitty"
-    path: "/Applications/kitty.app/"
+  - name: "iTerm"
+    path: "/Applications/iTerm.app/"
     pos: 4
   - name: "Slack"
     path: "/Applications/Slack.app/"
