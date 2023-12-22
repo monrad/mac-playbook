@@ -15,6 +15,7 @@ install-repo: ./roles ./geerlingguy.mac-dev-playbook/main.yml
 install-dirs:
 	mkdir -p ~/.config/kitty/
 	mkdir -p ~/.config/nvim/
+	mkdir -p ~/.config/ripgrep/
 	mkdir -p ~/.local/bin/
 	mkdir -p ~/Library/Application\ Support/iTerm2/DynamicProfiles/
 

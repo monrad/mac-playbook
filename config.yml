@@ -60,6 +60,7 @@ dotfiles_repo_version: main
 dotfiles_files:
   - .config/nvim/init.lua
   - .config/nvim/lua
+  - .config/ripgrep/ripgreprc
   - .local/bin/code-sessionizer
   - .local/bin/elgato
   - .local/bin/it2setcolor
