@@ -78,6 +78,7 @@ homebrew_installed_packages:
   - fzf
   - gh
   - git
+  - git-delta
   - git-lfs
   - gnupg
   - go
