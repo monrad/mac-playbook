@@ -74,6 +74,7 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - bat
   - coreutils
+  - exiftool
   - fd
   - fzf
   - gh
