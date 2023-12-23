@@ -13,7 +13,7 @@ install-xcode:
 install-repo: ./roles ./geerlingguy.mac-dev-playbook/main.yml
 
 install-dirs:
-	mkdir -p ~/.config/kitty/
+	mkdir -p ~/.config/git/
 	mkdir -p ~/.config/nvim/
 	mkdir -p ~/.config/ripgrep/
 	mkdir -p ~/.local/bin/
