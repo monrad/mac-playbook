@@ -61,9 +61,7 @@ dotfiles_files:
   - .config/git/attributes  
   - .config/git/config
   - .config/git/ignore
-  - .config/nvim/README.md
-  - .config/nvim/init.lua
-  - .config/nvim/lua
+  - .config/nvim
   - .config/ripgrep/ripgreprc
   - .local/bin/code-sessionizer
   - .local/bin/elgato
