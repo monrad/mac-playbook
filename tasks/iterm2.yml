@@ -21,6 +21,5 @@
     state: link
   loop:
     - "iterm2.json"
-    - "iterm2_tmux.json"
   become: false
   tags: ["iterm2"]
