@@ -109,7 +109,6 @@ homebrew_installed_packages:
 
 homebrew_taps:
   - homebrew/cask-fonts
-  - homebrew/cask-versions
   - martintopholm/xping
 
 homebrew_cask_accept_external_apps: true
