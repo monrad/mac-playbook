@@ -91,6 +91,7 @@ homebrew_installed_packages:
   - mtr
   - neovim
   - node
+  - pam-reattach
   - pinentry-mac
   - pwgen
   - pyenv
