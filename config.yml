@@ -73,6 +73,7 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - awlx/grepcidr3/grepcidr3
   - bat
   - coreutils
   - exiftool
@@ -108,7 +109,7 @@ homebrew_installed_packages:
   - zsh-you-should-use
 
 homebrew_taps:
-  - homebrew/cask-fonts
+  - awlx/grepcidr3
   - martintopholm/xping
 
 homebrew_cask_accept_external_apps: true
