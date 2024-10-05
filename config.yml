@@ -57,7 +57,7 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/git/bootstrap/dotfiles
 dotfiles_repo_version: main
 dotfiles_files:
-  - .config/git/attributes  
+  - .config/git/attributes
   - .config/git/config
   - .config/git/ignore
   - .config/nvim
@@ -85,6 +85,7 @@ homebrew_installed_packages:
   - git-lfs
   - gnupg
   - go
+  - go-task
   - httpie
   - irrtoolset
   - jq
