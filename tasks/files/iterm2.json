@@ -80,7 +80,7 @@
       "Non Ascii Font": "SymbolsNFM 12",
       "Vertical Spacing": 1,
       "Use Bold Font": true,
-      "Option Key Sends": 0,
+      "Option Key Sends": 2,
       "Selected Text Color": {
         "Green Component": 0,
         "Blue Component": 0,
