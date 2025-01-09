@@ -57,18 +57,19 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/git/bootstrap/dotfiles
 dotfiles_repo_version: main
 dotfiles_files:
+  - .config/ghostty/config
   - .config/git/attributes
   - .config/git/config
   - .config/git/ignore
   - .config/nvim
   - .config/ripgrep/ripgreprc
+  - .config/tmux/tmux.conf
   - .local/bin/code-sessionizer
   - .local/bin/elgato
   - .local/bin/it2setcolor
   - .local/bin/tmux-sessionizer
   - .osx
   - .p10k.zsh
-  - .config/tmux/tmux.conf
   - .zshrc
 
 homebrew_installed_packages:
