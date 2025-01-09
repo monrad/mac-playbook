@@ -13,6 +13,7 @@ install-xcode:
 install-repo: ./roles ./geerlingguy.mac-dev-playbook/main.yml
 
 install-dirs:
+	mkdir -p ~/.config/ghostty/
 	mkdir -p ~/.config/git/
 	mkdir -p ~/.config/ripgrep/
 	mkdir -p ~/.config/tmux/
