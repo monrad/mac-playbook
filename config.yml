@@ -127,6 +127,7 @@ homebrew_cask_apps:
   - font-hack-nerd-font
   - font-sf-mono
   - font-symbols-only-nerd-font
+  - ghostty
   - google-chrome
   - google-earth-pro
   - iterm2
