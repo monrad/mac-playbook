@@ -122,6 +122,7 @@ homebrew_cask_apps:
   - elgato-camera-hub
   - elgato-control-center
   - elgato-stream-deck
+  - elgato-wave-link
   - firefox
   - font-hack-nerd-font
   - font-sf-mono
@@ -140,8 +141,6 @@ homebrew_cask_apps:
   - whatsapp
   - wireshark
   - zoom
-homebrew_cask_uninstalled_apps:
-  - elgato-wave-link
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
