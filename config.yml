@@ -87,9 +87,13 @@ homebrew_installed_packages:
   - gnupg
   - go
   - go-task
+  - gs
   - httpie
+  - imagemagick
   - irrtoolset
   - jq
+  - luarocks
+  - mermaid-cli
   - mtr
   - neovim
   - node
@@ -100,9 +104,12 @@ homebrew_installed_packages:
   - ripgrep
   - rust
   - sipcalc
+  - tectonic
   - telnet
   - tmate
   - tmux
+  - tree-sitter
+  - tree-sitter-cli
   - wget
   - whois
   - xping
