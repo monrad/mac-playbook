@@ -66,6 +66,7 @@ dotfiles_files:
   - .config/tmux/tmux.conf
   - .local/bin/code-sessionizer
   - .local/bin/elgato
+  - .local/bin/git-clone-bare-for-worktrees
   - .local/bin/it2setcolor
   - .local/bin/tmux-sessionizer
   - .osx
