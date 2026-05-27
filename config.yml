@@ -57,6 +57,9 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/git/bootstrap/dotfiles
 dotfiles_repo_version: main
 dotfiles_files:
+  - .claude/CLAUDE.md
+  - .claude/settings.json
+  - .claude/statusline-command.sh
   - .config/ghostty/config
   - .config/git/attributes
   - .config/git/config
