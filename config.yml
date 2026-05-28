@@ -67,6 +67,8 @@ dotfiles_files:
   - .config/nvim
   - .config/ripgrep/ripgreprc
   - .config/tmux/tmux.conf
+  - .config/zellij/config.kdl
+  - .config/zellij/layouts/default.kdl
   - .local/bin/code-sessionizer
   - .local/bin/elgato
   - .local/bin/git-clone-bare-for-worktrees
@@ -74,6 +76,7 @@ dotfiles_files:
   - .local/bin/tmux-sessionizer
   - .osx
   - .p10k.zsh
+  - .zsh-common.zsh
   - .zshrc
 
 homebrew_installed_packages:
@@ -117,6 +120,7 @@ homebrew_installed_packages:
   - wget
   - whois
   - xping
+  - zellij
   - zsh-autosuggestions
   - zsh-syntax-highlighting
   - zsh-you-should-use
