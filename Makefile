@@ -18,6 +18,7 @@ install-dirs:
 	mkdir -p ~/.config/git/
 	mkdir -p ~/.config/ripgrep/
 	mkdir -p ~/.config/tmux/
+	mkdir -p ~/.config/zellij/layouts/
 	mkdir -p ~/.local/bin/
 	mkdir -p ~/Library/Application\ Support/iTerm2/DynamicProfiles/
 
