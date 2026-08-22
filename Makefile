@@ -16,6 +16,7 @@ install-dirs:
 	mkdir -p ~/.claude/
 	mkdir -p ~/.config/ghostty/
 	mkdir -p ~/.config/git/
+	mkdir -p ~/.config/herdr/
 	mkdir -p ~/.config/ripgrep/
 	mkdir -p ~/.config/tmux/
 	mkdir -p ~/.config/zellij/layouts/

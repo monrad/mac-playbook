@@ -65,6 +65,7 @@ dotfiles_files:
   - .config/git/attributes
   - .config/git/config
   - .config/git/ignore
+  - .config/herdr/config.toml
   - .config/nvim
   - .config/ripgrep/ripgreprc
   - .config/tmux/tmux.conf
@@ -96,6 +97,7 @@ homebrew_installed_packages:
   - go
   - go-task
   - gs
+  - herdr
   - httpie
   - imagemagick
   - irrtoolset
