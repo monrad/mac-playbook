@@ -135,7 +135,6 @@ homebrew_taps:
 homebrew_cask_accept_external_apps: true
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - docker
   - drawio
   - elgato-camera-hub
   - elgato-control-center
@@ -148,6 +147,7 @@ homebrew_cask_apps:
   - google-chrome
   - google-earth-pro
   - iterm2
+  - orbstack
   - rectangle
   - serial
   - signal
@@ -157,7 +157,7 @@ homebrew_cask_apps:
   - utm
   - visual-studio-code
   - whatsapp
-  - wireshark
+  - wireshark-app
   - zoom
 
 # See `geerlingguy.mas` role documentation for usage instructions.
