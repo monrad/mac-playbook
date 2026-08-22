@@ -58,9 +58,7 @@ dotfiles_repo_local_destination: ~/git/bootstrap/dotfiles
 dotfiles_repo_version: main
 dotfiles_files:
   - .claude/CLAUDE.md
-  - .claude/settings.json
   - .claude/statusline-command.sh
-  - .claude/zellij-rename.sh
   - .config/ghostty/config
   - .config/git/attributes
   - .config/git/config
